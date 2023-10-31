@@ -1,0 +1,15 @@
+<div class="container mt-4">
+    <h1>Lista de Imágenes</h1>
+    <div class="row">
+      <div class="col-4" *ngFor="let imagen of imagenes">
+        <div class="card mb-4">
+          <img [src]="imagen.url" class="card-img-top" alt="Imagen">
+          <div class="card-body">
+            <h5 class="card-title">{{ imagen.titulo }}</h5>
+            <p class="card-text">{{ imagen.descripcion }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
